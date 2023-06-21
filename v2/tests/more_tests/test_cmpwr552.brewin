@@ -1,0 +1,23 @@
+#note: the spec does not require you pass this test case because mammal
+#a class defined after it. It is useful to demonstrate the use of "return me"
+#and dynamic dispatch
+
+(class mammal (method person get_me () (return me))
+)
+
+(class person inherits mammal)
+
+(class student inherits person
+  (method person get_me () (return (call super get_me)))
+)
+
+(class main
+  (field student s null)
+  (field person x null)
+  (method void main ()
+    (begin
+      (set s (new student))
+      (print (== s (call s get_me)))
+    )
+  )
+)
