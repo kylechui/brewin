@@ -1,7 +1,7 @@
-# `brewin` Interpreter
+# `Brewin` Interpreter
 
 This is my solution for the first interpreter project for CS 131 Spring 2023:
-`brewin`. Here are a few sources/references:
+`Brewin`. Here are a few sources/references:
 
 - [Language specification](https://docs.google.com/document/d/1pPQ2qZKbbsbZGBSwvuy1Ir-NZLPMgVt95WPQuI5aPho/edit#)
 - [Starter code](https://github.com/UCLA-CS-131/spring-23-project-starter)
