@@ -1,0 +1,21 @@
+(class person
+ (method void talk () (print "hello world"))
+)
+
+(tclass struct (field_type)
+  (field field_type value)
+  (method void set_val ((field_type v)) (set value v))
+  (method field_type get_val () (return value))
+)
+
+(class main
+  (method void main () 
+    (let ((struct@person sp null) (person p null))
+      (set sp (new struct@person))
+      (set p (new person))
+      (call sp set_val p)
+      (call (call sp get_val) talk)
+    )
+  )
+)
+

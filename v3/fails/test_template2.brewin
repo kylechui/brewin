@@ -1,0 +1,10 @@
+(tclass foo (field_type)
+  (field field_type value)
+  (method void set_val ((field_type v)) (set value v))
+)
+
+(class main
+  (field foo x null)
+  (method void main () (print 5))
+)
+

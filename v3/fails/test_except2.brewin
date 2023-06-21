@@ -1,0 +1,15 @@
+(class main
+ (method void foo () 
+   (print "hello")
+ )
+
+ (method void main ()
+  (begin
+    (try
+       (call me foo)
+       (print exception)
+    )
+    (print exception)
+  )
+ )
+)

@@ -1,0 +1,20 @@
+(class main
+ (method void foo () 
+   (throw "blah")
+ )
+ (method int bar () 
+   (try
+     (call me foo)
+     (throw (+ "wow:" exception))
+   )
+ )
+
+ (method void main ()
+  (begin
+    (try
+       (call me bar)
+       (print exception)
+    )
+  )
+ )
+)

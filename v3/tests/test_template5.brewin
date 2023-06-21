@@ -1,0 +1,18 @@
+(tclass foo (field_type)
+  (method void bar ((field_type p)) 
+     (let ((field_type x))
+          (set x p)
+          (print x)
+     )
+  )
+)
+
+(class main
+  (method void main () 
+    (let ((foo@int x null))
+      (set x (new foo@int))
+      (call x bar 10)
+    )
+  )
+)
+

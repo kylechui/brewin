@@ -1,0 +1,14 @@
+(class main
+ (method void foo () 
+   (throw 5)
+ )
+
+ (method void main ()
+  (begin
+    (try
+       (call me foo)
+       (print exception)
+    )
+  )
+ )
+)

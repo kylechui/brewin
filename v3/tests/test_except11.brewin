@@ -1,0 +1,16 @@
+(class main
+ (method int foo () 
+   (throw "blah")
+ )
+
+ (method void main ()
+  (begin
+    (try
+       (while (call me foo)
+         (print "foo")
+       )
+       (print exception)
+    )
+  )
+ )
+)

@@ -1,0 +1,15 @@
+(class main
+ (method void foo () 
+   (print "blah")
+ )
+ 
+ (method void main ()
+   (begin
+    (try
+      (call me foo)
+      (print "boo")
+    )
+    (print "barf")
+   )
+ )
+)

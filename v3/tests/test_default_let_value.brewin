@@ -1,0 +1,14 @@
+(class main
+ (field int a)
+ (field bool b)
+ (field string c)
+ (field main d)
+ (method void main ()
+  (begin
+    (print a)
+    (print b)
+    (print c)
+    (if (!= d null) (print "value") (print "null"))
+  )
+ )
+)

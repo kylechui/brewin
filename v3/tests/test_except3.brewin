@@ -1,0 +1,29 @@
+(class main
+ (method void bar () 
+   (begin
+     (print "oof")
+     (throw "blah")
+     (print "goof")
+   )
+ )
+
+
+ (method void foo () 
+  (begin
+   (call me bar)
+   (print "bletch")
+  )
+ )
+
+ (method void main ()
+  (begin
+    (try
+       (begin
+         (call me foo)
+         (print "barf")
+       )
+       (print exception)
+    )
+  )
+ )
+)

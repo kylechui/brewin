@@ -1,0 +1,26 @@
+(tclass foo (field_type1 field_type2)
+  (method void blah ((field_type1 x) (field_type2 y))
+    (begin
+      (call x talk)
+      (call y talk)
+    )
+  )
+)
+
+(class duck
+ (method void talk () (print "quack"))
+)
+
+(class person 
+ (method void talk () (print "hello"))
+)
+
+(class main
+  (method void main () 
+    (let ((foo@duck@person x null))
+      (set x (new foo@duck@person))
+      (call x blah (new duck) (new person))
+    )
+  )
+)
+

@@ -1,0 +1,10 @@
+(class main
+ (method void main ()
+  (let ((int a) (bool b) (string c) (main d))
+    (print a)
+    (print b)
+    (print c)
+    (if (!= d null) (print "value") (print "null"))
+  )
+ )
+)

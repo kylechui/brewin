@@ -1,0 +1,15 @@
+(tclass foo (field_type)
+  (method foo@field_type get_me () (return me))
+  (method void talk () (print "hi"))
+)
+
+(class main
+  (method void main () 
+    (let ((foo@int x null))
+      (set x (new foo@int))
+      (set x (call x get_me))
+      (call x talk)
+    )
+  )
+)
+
