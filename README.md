@@ -15,9 +15,9 @@ The grammar below uses the following meta-notation:
 
 - Non-terminal symbols are written in $\textit{this font}$
 - Terminal symbols are written in $\texttt{this font}$, except:
-  - $\langle\texttt{INT\_LITERAL}\rangle$ indicates a string matching the
+  - $\langle\texttt{INT\\_LITERAL}\rangle$ indicates a string matching the
     regular expression `-?[0-9]+`
-  - $\langle\texttt{STRING\_LITERAL}\rangle$ indicates a string of zero or more
+  - $\langle\texttt{STRING\\_LITERAL}\rangle$ indicates a string of zero or more
     [ASCII characters](https://en.wikipedia.org/wiki/ASCII)
   - $\langle\texttt{IDENTIFIER}\rangle$ indicates a string matching the regular
     expression `[_a-zA-Z]+[_a-zA-Z0-9]*`
